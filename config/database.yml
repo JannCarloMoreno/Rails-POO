@@ -21,6 +21,11 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
+# Añadido para configurar Ruby On Rails para PostgreSQL
+host: localhost
+username: user
+password: moreno1022
+
 development:
   <<: *default
   database: platziblog_development
